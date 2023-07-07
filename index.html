@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>신혜지</title>
+    <!-- 파비콘 -->
+    <link rel="shortcut icon" href="favicon.ico">
+    <!-- animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <!-- 웹폰트 -->
+    <link href="https://hangeul.pstatic.net/hangeul_static/css/nanum-myeongjo.css" rel="stylesheet">
+    <!-- 어바웃 팝업창 라이브러리 css -->
+    <link rel="stylesheet" href="dist/css/winbox.min.css">
+    <!-- 내 css -->
+    <link rel="stylesheet" href="css/main.css">
+    <!-- 어바웃 팝업창 라이브러리 js -->
+    <script src="dist/js/winbox.min.js"></script>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>    
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <!-- MixItUp -->
+    <script src="js/mixitup.min.js"></script>
+    <!-- gsap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/MotionPathPlugin.min.js"></script>
+    <!-- 폰트어썸 -->
+    <script src="https://kit.fontawesome.com/122b402249.js" crossorigin="anonymous"></script>
+    <script src="js/main.js" defer></script>
+</head>
+<body>
+    <div id="wrap">
+        <!-- 헤더 -->
+        <header id="header">
+            <div class="inner">
+                <div class="main-logo">
+                    <h1>
+                        <a href="#"><img src="images/stardust.png" alt="캐릭터 로고"></a>
+                    </h1>
+                </div>
+                <nav class="navi">
+                    <!-- 메뉴 -->
+                    <ul class="gnb">
+                        <li><a href="#about">about</a></li>
+                        <li><a href="#mywork">my work</a></li>
+                        <li><a href="#contact">contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <section id="visual">
+                <div class="back">
+                </div>
+                <div class="front">
+                    <div class="title">
+                        <div class="title-wrap">
+                          <div class="textHolder">
+                            <h2>
+                                <img src="images/title.png" alt="2023 portfolio">
+                            </h2>
+                          </div>
+                        </div>
+                    <!-- 별 -->
+                    <div class="star">
+                        <div class="starline">
+                            <div class="blink">
+                                <svg width="301" height="227" viewBox="0 0 301 227" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path class="line1" d="M1 226L300.5 1"/>
+                                </svg>                            
+                                <svg width="301" height="227" viewBox="0 0 301 227" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path class="line2" d="M1 226L300.5 1"/>
+                                    </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <!-- 물결 -->
+                <div class="wave-wrapper">
+                    <div>
+                        <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+                            <defs>
+                                <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"></path>
+                            </defs>
+                            <g class="parallax">
+                                <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(130,122,200,0.7"></use>
+                                <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(205,199,255,0.5)"></use>
+                                <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(130,122,200,0.3)"></use>
+                                <use xlink:href="#gentle-wave" x="48" y="7" fill="rgba(229,234,248)"></use>
+                            </g>
+                        </svg>
+                    </div>
+                </div>
+            </section>
+            <section id="about">
+                <div class="inner">
+                    <div class="folder">
+                        <h3><span>a</span><span>b</span><span>o</span><span>u</span><span>t</span> <span>m</span><span>e</span></h3>
+                        <div class="icon">
+                                <svg  onclick="Pop()" width="240" height="240" viewBox="0 0 240 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M200 60H110L90 40H40C29 40 20 49 20 60V100H220V80C220 69 211 60 200 60Z" fill="#FFA000"/>
+                                    <rect x="52" y="30" width="135" height="128" fill="white"/>
+                                    <path d="M200 60H40C29 60 20 69 20 80V180C20 191 29 200 40 200H200C211 200 220 191 220 180V80C220 69 211 60 200 60Z" fill="#FFCA28"/>
+                                    </svg>
+                            <p>눌러보세요!</p>
+                        </div>
+                        <div class="back-imo">
+                            <svg id="imo" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 320 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M0 55.2V426c0 12.2 9.9 22 22 22c6.3 0 12.4-2.7 16.6-7.5L121.2 346l58.1 116.3c7.9 15.8 27.1 22.2 42.9 14.3s22.2-27.1 14.3-42.9L179.8 320H297.9c12.2 0 22.1-9.9 22.1-22.1c0-6.3-2.7-12.3-7.4-16.5L38.6 37.9C34.3 34.1 28.9 32 23.2 32C10.4 32 0 42.4 0 55.2z"/></svg>
+                                <svg id="weee" width="1920" height="258" viewBox="0 0 1920 258" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path id="path" d="M-128 244.042C454.5 323.5 473 261 366.5 166.5C260 72.0001 381 -39 680 15.5C979 70 1160.5 313.733 1307 192.5C1453.5 71.2674 2073.19 333.398 2005.55 71.2674"/>
+                                </svg>   
+                        </div>
+                    </div>
+                    <div id="backstore" style="display: none;">
+                        <div id="content">
+                            <div class="title">
+                                <h3>안녕하세요.<br>웹퍼블리셔 신혜지입니다.</h3>
+                                <!-- <img src="images/giphy-unscreen.gif" alt="확인용"> -->
+                            </div>
+                            <div class="my-info">
+                                <div class="info-item">
+                                    <h4>About me</h4>
+                                    <p>항상 발전하는 웹퍼블리셔가 되겠습니다.</p>
+                                </div>
+                                <div class="info-item education">
+                                    <h4>Education</h4>
+                                    <div class="edu">
+                                        <p>그린컴퓨터아트학원 대구캠퍼스<br>
+                                            UI/UX 반응형 웹디자인 & 웹퍼블리셔(디자인&코딩) 양성 A
+                                        </p>
+                                        <span>2023.03~2023.07</span>
+                                    </div>
+                                    <div class="edu">
+                                        <p>계명대학교 광고홍보학</p>
+                                        <span>2017.02~2022.02</span>
+                                    </div>
+                                </div>
+                                <div class="info-item">
+                                    <h4>나이</h4>
+                                    <p>1998. 11. 24</p>
+                                </div>
+                                <div class="info-item">
+                                    <h4>자격증</h4>
+                                    <p>GTQ 1급</p>
+                                    <p>웹디자인기능사</p>
+                                </div>
+                                <div class="info-item skills">
+                                    <h4>Skills</h4>
+                                    <!-- 기술 아이콘 -->
+                                    <div class="skills-icon">
+                                        <img src="images/icon/Photoshop.png" alt="포토샵 로고">
+                                        <img src="images/icon/Illustrator.png" alt="일러스트레이터 로고">
+                                        <img src="images/icon/Figma.png" alt="피그마 로고">
+                                        <img src="images/icon/htmllogo.png" alt="html 로고">
+                                        <img src="images/icon/csslogo.png" alt="css 로고">
+                                        <img src="images/icon/jslogo.png" alt="js 로고">
+                                        <img src="images/icon/jquerylogo.png" alt="jquery 로고">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="mywork">
+                <h3>my work</h3>
+                <ul class="project">
+                    <li class="re">
+                        <a href="#slide-wrap">
+                            <div class="project-box redesign">
+                                <h4>리디자인</h4>
+                                <div class="slide">
+                                    <img src="images/work/exco-f.png" alt="엑스코 리디자인 목업">
+                                    <img src="images/work/lol-f.png" alt="리그 오브 레전드 리디자인 목업">
+                                    <img src="images/work/kidari-f.png" alt="키다리 스튜디오 리디자인 목업">
+                                    </div>
+                                <p>WEB + APP</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#clone">
+                            <div class="project-box clone">
+                                <h4>클론코딩</h4>
+                                <img src="images/work/cookie.gif" alt="쿠키런 쿠키들">
+                                <p>DEVSISTERS</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#detail-page">
+                            <div class="project-box detail">
+                                <h4>Detail Page</h4>
+                                <div class="frame">
+                                    <img src="images/work/상세.jpg" alt="확인용">
+                                </div>
+                                <p>상세페이지</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#others">
+                            <div class="project-box other">
+                                <h4>OTHER</h4>
+                                <svg class="popo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                                    <path d="M512 256c0 .9 0 1.8 0 2.7c-.4 36.5-33.6 61.3-70.1 61.3H344c-26.5 0-48 21.5-48 48c0 3.4 .4 6.7 1 9.9c2.1 10.2 6.5 20 10.8 29.9c6.1 13.8 12.1 27.5 12.1 42c0 31.8-21.6 60.7-53.4 62c-3.5 .1-7 .2-10.6 .2C114.6 512 0 397.4 0 256S114.6 0 256 0S512 114.6 512 256zM128 288a32 32 0 1 0 -64 0 32 32 0 1 0 64 0zm0-96a32 32 0 1 0 0-64 32 32 0 1 0 0 64zM288 96a32 32 0 1 0 -64 0 32 32 0 1 0 64 0zm96 96a32 32 0 1 0 0-64 32 32 0 1 0 0 64z"/>
+                                </svg>              
+                                <p>디자인작업</p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <section id="contact">
+                <div class="address">
+                    <h3>contact</h3>
+                    <div class="link">
+                        <p><a href="tel:010-5112-6834">010-5112-6834</a></p>
+                        <p><a href="mailto:24laststardust@gmail.com">Mail</a></p>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <i class="fa-solid fa-feather"></i>
+                    <fieldset>
+                        <form action="https://formspree.io/f/mdovjeoj" method="post">
+                            <ul>
+                                <li>
+                                    <label for="username">성함</label>
+                                    <input type="text" id="username" name="username" placeholder="NAME" required>
+                                </li>
+                                <li>
+                                    <label for="useremail">메일 주소</label>
+                                    <input type="email" id="useremail" name="useremail" placeholder="EMAIL" required>
+                                </li>
+                                <li>
+                                    <label for="subject">제목</label>
+                                    <input type="text" id="subject" name="subject" placeholder="SUBJECT" required>
+                                </li>
+                                <li>
+                                    <label for="message"></label>
+                                    <textarea name="message" id="message" cols="30" rows="10" placeholder="MESSAGE"></textarea>
+                                </li>
+                                <li>
+                                    <label for="submit"></label>
+                                    <input type="submit" value="send" class="btn">
+                                </li>
+                            </ul>    
+                        </form>
+                    </fieldset>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="end">
+                <h4>신혜지의 포트폴리오</h4>
+                <p>끝까지 봐주셔서 감사합니다!</p>
+                <span>2023</span>
+            </div>
+        </footer>
+    </div>
+    
+    <div id="slide-wrap">
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <h4>WEB</h4>
+                    <div class="mw">
+                        <div class="mockup">
+                            <img src="images/work/exco.png" alt="exco 리디자인 목업">
+                        </div>
+                        <div class="text">
+                            <span>redesign</span>
+                            <p class="tit">EXCO</p>
+                            <p>구성<span>main + sub2</span></p>
+                            <p>툴<span>figma</span></p>
+                            <p>기여도<span>100%</span></p>
+                            <div class="link">
+                                <a href="https://www.figma.com/file/VISXAvAS2pwp7L4SW1nJnW/1.exco?type=design&node-id=0%3A1&mode=design&t=nXhEF8IuhLr0KBmS-1" target="_blank">WIREFRAME</a>
+                                <a href="https://24stardust.github.io/Redesign-ex/" target="_blank">PROTOTYPE</a>
+                                <a href="https://www.exco.co.kr/index.html" target="_blank">원본</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <h4>WEB</h4>
+                    <div class="mw">
+                        <div class="mockup">
+                            <img src="images/work/lol.png" alt="리그 오브 레전드 리디자인 목업">
+                        </div>
+                        <div class="text">
+                            <span>redesign</span>
+                            <p class="tit">리그 오브 레전드</p>
+                            <p>구성<span>main + sub2</span></p>
+                            <p>툴<span>figma</span></p>
+                            <p>기여도<span>100%</span></p>
+                            <div class="link">
+                                <a href="https://www.figma.com/file/Rqh7DtTUnMQO9FG3YL0lCE/2.lol?type=design&node-id=0%3A1&mode=design&t=ykNpQtSPewExIfH8-1" target="_blank">WIREFRAME</a>
+                                <a href="#">PROTOTYPE</a>
+                                <a href="https://www.leagueoflegends.com/ko-kr/" target="_blank">원본</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <h4>WEB</h4>
+                    <div class="mw">
+                        <div class="mockup">
+                            <img src="images/work/kidari.png" alt="키다리 스튜디오 리디자인 목업">
+                        </div>
+                        <div class="text">
+                            <span>redesign</span>
+                            <p class="tit">키다리 스튜디오</p>
+                            <p>구성<span>main + sub2</span></p>
+                            <p>툴<span>figma</span></p>
+                            <p>기여도<span>100%</span></p>
+                            <div class="link">
+                                <a href="https://www.figma.com/file/DALmbn1i839c2Sa02zC9pa/3.%ED%82%A4%EB%8B%A4%EB%A6%AC-%EC%8A%A4%ED%8A%9C%EB%94%94%EC%98%A4?type=design&node-id=0%3A1&mode=design&t=CF3NbtOWDl7w8Lj4-1" target="_blank">WIREFRAME</a>
+                                <a href="https://24stardust.github.io/Redesign-ki/" target="_blank">PROTOTYPE</a>
+                                <a href="http://www.kidaristudio.com/" target="_blank">원본</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <h4>APP</h4>
+                    <div class="mw">
+                        <div class="mockup">
+                            <img src="images/work/Pl@Y!.png" alt="pl@y! 리디자인 목업">
+                        </div>
+                        <div class="text">
+                            <span>redesign</span>
+                            <p class="tit">PL@Y!</p>
+                            <p>구성<span>main + sub2</span></p>
+                            <p>툴<span>figma</span></p>
+                            <p>기여도<span>50% (팀 프로젝트)</span></p>
+                            <div class="link">
+                                <a href="https://www.figma.com/file/m6RMuPnvq1vpCeCERLJmNE/%EC%8B%A0%ED%98%9C%EC%A7%80%2C-%EC%A7%84%EB%8B%A4%EC%9D%80?type=design&node-id=0%3A1&mode=design&t=JbF1KFk3Khh8dgMD-1" target="_blank">WIREFRAME</a>
+                                <a href="images/신혜지, 진다은.pdf" target="_blank">PDF</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+        <a href="#slide-wrap" class="close"><span class="line1"></span><span class="line2"></span></a>
+    </div>
+    <div id="clone">
+        <div class="clone-inner">
+            <h4>클론 코딩</h4>
+            <ul>
+                <li class="clone-box">
+                    <div class="image">
+                        <img src="images/work/clone/devsisters-og-img.jpg" alt="데브시스터즈">
+                    </div>
+                    <!-- h4? h5? 정리하기 -->
+                    <div class="text">
+                        <h5>DEVSISTERS</h5>
+                        <a href="https://24stardust.github.io/Portfolio/" target="_blank">VIEW</a>
+                    </div>
+                </li>
+                <li class="clone-box">
+                    <div class="image">
+                        <!-- <img src="images/work/clone/devsisters-og-img.jpg" alt="데브시스터즈"> -->
+                    </div>
+                    <!-- h4? h5? 정리하기 -->
+                    <div class="text">
+                        <h5>준비중</h5>
+                        <a href="#">VIEW</a>
+                    </div>
+                </li>
+                <li class="clone-box">
+                    <div class="image">
+                        <!-- <img src="images/work/clone/devsisters-og-img.jpg" alt="데브시스터즈"> -->
+                    </div>
+                    <!-- h4? h5? 정리하기 -->
+                    <div class="text">
+                        <h5>준비중</h5>
+                        <a href="#">VIEW</a>
+                    </div>
+                </li>
+            </ul>                   
+        </div>
+        <a href="#clone" class="close"><span class="line1"></span><span class="line2"></span></a>
+    </div>
+    <div id="detail-page">
+        <div class="detail-inner">
+            <h4>상세페이지</h4>
+            <ul>
+                <li><a href="images/아토베리어.pdf" target="_blank"><img src="images/work/detail/aestura.png" alt="에스트라 상세페이지"></a></li>
+                <li><a href="images/pasley_C1.jpg" target="_blank"><img src="images/work/detail/walkin'.png" alt="상세페이지"></a></li>
+                <li><a href="images/룰루레몬.pdf" target="_blank"><img src="images/work/detail/lululemon.png" alt="룰루레몬 상세페이지"></a></li>
+                <li><a href="images/스플렌더.pdf" target="_blank"><img src="images/work/detail/splendor.png" alt="상세페이지"></a></li>
+            </ul>
+        </div>
+        <a href="#detail-page" class="close"><span class="line1"></span><span class="line2"></span></a>
+    </div>
+
+    <div id="others">
+        <div class="other-box">
+            <div class="mix-btn container">
+                <div class="btn-top">
+                    <button type="button" data-filter="all">All</button>
+                    <button type="button" data-filter=".sns">SNS</button>
+                    <button type="button" data-filter=".site">SITE</button>
+                    <button type="button" data-filter=".logo">LOGO</button>
+                </div>
+                <div class="btn-bottom">
+                    <button type="button" data-sort="random">랜덤</button>
+                </div>
+            </div>
+            <ul class="mix-wrapper">
+                <li class="mix sns"  data-order="1"><a href="#"><img src="images/work/other/SNS1.png" alt="인스타그램 콘텐츠1 썸네일"></a></li>
+                <li class="mix sns"  data-order="2"><a href="#"><img src="images/work/other/SNS2.jpg" alt="인스타그램 콘텐츠2 썸네일"></a></li>
+                <li class="mix site"  data-order="3"><a href="https://blog.naver.com/sjanguni1004" target="_blank"><img src="images/work/other/blog1-thumb.png" alt="네이버 블로그 디자인 썸네일"></a></li>
+                <li class="mix logo"  data-order="4"><a href="images/시안디자인개발심화 신혜지(최종).pdf" target="_blank"><img src="images/work/other/logo-thumb.png" alt="시그니처 디자인 썸네일"></a></li>
+                <li class="mix site"  data-order="5"><a href="https://dewdd123.cafe24.com/skin-skin2" target="_blank"><img src="images/work/other/cafe24-thumb.png" alt="cafe24 썸네일"></a></li>
+                <li class="mix sns"  data-order="6"><a href="#"><img src="images/work/other/카드뉴스-최종본.jpg" alt="카드뉴스 썸네일"></a></li>
+                <li class="mix"  data-order="7"><a href="#" class="uu"><i class="fa-solid fa-hammer"></i>준비중</a></li>
+                <li class="mix"  data-order="8"><a href="#" class="uu"><i class="fa-solid fa-hammer"></i>준비중</a></li>
+            </ul>
+        </div>
+        <a href="#others" class="close"><span class="line1"></span><span class="line2"></span></a>
+    </div>
+      <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 1,
+      spaceBetween: 30,
+      loop: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
+
+<script>
+    path = document.querySelector('.star path').getTotalLength(); 
+    console.log(path);
+ </script>
+</body>
+</html>
