@@ -718,6 +718,7 @@ header .inner {
     padding: 7.51% 10.51%;
     font-family: 'NanumMyeongjoBold';
     overflow: hidden;
+    background-color: #fff0ed;
 }
 #slide-wrap h4 {
     text-align: center;
