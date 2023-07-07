@@ -493,7 +493,7 @@ header .inner {
     margin-bottom: 3%;
 }
 .my-info .info-item h4 {
-    margin-bottom: 0.5rem;
+    margin: 0.5rem 0;
     font-size: 1.375rem;
 }
 .my-info .info-item span {
@@ -546,7 +546,7 @@ header .inner {
     margin-left: 1rem;
 }
 .my-info .info-item.skills img {
-    margin-right: 1rem;
+    margin: 1rem 1rem 0 0;
     height: 5rem;
 }
 
@@ -1246,6 +1246,9 @@ footer .end span {
 @media screen and (max-width: 1550px) {
     html {
         font-size: 15px;
+    }
+    .swiper-slide .mw .text .link a {
+        font-size: 1.2vw;
     }
 }
 @media screen and (max-width: 1395px) {
