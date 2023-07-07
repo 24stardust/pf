@@ -241,17 +241,6 @@ header .inner {
     top: 0; left: 0;
     padding: 10% 20% 10% 30%;
 }
-/* .star .starline .blink::before {
-    display: block;
-    content: "";
-    width: 20rem;
-    height: 20rem;
-    background-color: whitesmoke;
-    position: absolute;
-    z-index: 9;
-    top: 0; left: 0;
-} */
-
 
 @keyframes dash {
     /* 0% { stroke-dashoffset: 0; } */
@@ -510,15 +499,16 @@ header .inner {
     padding-right: 8px;
 }
 .my-info .info-item:nth-child(2) h4::before {
-    content: '🥳';
-    font-size: 1.2rem;
-    padding-right: 8px;
-}
-.my-info .info-item:nth-child(3) h4::before {
     content: '✍️';
     font-size: 1.2rem;
     padding-right: 8px;
 }
+.my-info .info-item:nth-child(3) h4::before {
+    content: '🥳';
+    font-size: 1.2rem;
+    padding-right: 8px;
+}
+
 .my-info .info-item:nth-child(4) h4::before {
     content: '💪';
     font-size: 1.2rem;
@@ -1170,7 +1160,7 @@ a.close .line2 {
     border-radius: 14px;
     border: 1px solid #110F70;
     margin-top: 3px;
-    font-size: 0.9rem;
+    font-size: 1vw;
     outline: none;
 }
 #contact .contact-form form ul li input:focus {
@@ -1264,13 +1254,9 @@ footer .end span {
     .swiper-pagination {
         display: block;
     }
-    .swiper-button-next {
+    #slide-wrap .swiper-button-next, #slide-wrap .swiper-button-prev {
         display: none;
     }
-    .swiper-button-prev {
-        display: none;
-    }    
-}
 @media screen and (max-width: 1100px) {
     html {
         font-size: 12.5px;
@@ -1336,8 +1322,12 @@ footer .end span {
     header {
         padding: 0 3%;
     }    
+    .gnb > li {
+        padding: 0 1rem;
+    }
     #visual .title {
         height: 70vh;
+    }
     }
     #visual {
         height: 70vh;
@@ -1345,6 +1335,9 @@ footer .end span {
     .title-wrap {
         width: 100vw;
         height: 70vh;
+    }
+    .textHolder {
+        margin-top: 50% !important;
     }
     .textHolder img {
         width: 100%;
@@ -1367,7 +1360,7 @@ footer .end span {
     .swiper-slide .mw {
         /* flex-direction: column; */
         display: block;
-        padding: 0;
+        padding: 3%;
     }
     .swiper-slide .mw .mockup {
         padding: 0;
@@ -1378,7 +1371,7 @@ footer .end span {
         object-fit: contain;
     }
     .swiper-slide .mw .text {
-        padding-bottom: 3%;
+        height: 50%;
     }
     .swiper-slide .mw .text .link::after {
         display: block;
@@ -1389,6 +1382,8 @@ footer .end span {
         width: 32%;
         margin-right: 0;
         float: left;
+        font-size: 2.3vw;
+        line-height: 2.5;
     }
     .swiper-slide .mw .text .link a:nth-child(2) {
         margin: 0 2%;
@@ -1403,9 +1398,11 @@ footer .end span {
         padding: 1rem 0;
     }
     .swiper-slide .mw .text p:not(.tit) {
-        padding: 1.5% 0;
+        padding: 1.2% 0;
     }
-
+    .swiper-slide .mw .text > span {
+        font-size: 1.2rem;
+    }
     #clone {
         padding: 13% 5%;
     }
@@ -1450,6 +1447,31 @@ footer .end span {
         padding: 10%;
     }
     #others .mix-wrapper .mix {
+    }
+    #contact {
+        flex-direction: column;
+    }
+    #contact .contact-form {
+        width: 100%;
+        margin: 8% 0;
+    }
+    #contact .address {
+        width: 100%;
+    }
+    #contact .address h3 {
+        float: left;
+    }
+    #contact .address .link {
+        float: right;
+    }
+    #contact p {
+        font-size: 3vw;
+    }
 
+    #contact .contact-form form ul li input {
+        font-size: 2.3vw;
+    }
+    footer .end {
+        font-size: 2.7vw;
     }
 }
