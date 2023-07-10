@@ -98,22 +98,8 @@ $(document).ready(function(){
     $(".title-wrap").css({
         "transform": "rotateX(" + XrotateDeg + "deg) rotateY(" + YrotateDeg + "deg)" 
     });
+
 })
-
-const slideBG = document.getElementById('slide-wrap')
-const slideEl = document.querySelector('.swiper-slide')
-const slideidx = slideEl.getAttribute('data-swiper-slide-index')
-const slideEla = slideEl.classList.contains('swiper-slide-active')
-console.log(slideidx)
-if((slideidx == 0) && (slideEl.classList.contains('swiper-slide-active'))){
-    slideBG.classList.add('BG1')
-}
-// slideS.onclick = function(){
-//     if(slideidx == 0){
-//         slideBG.classList.add('black')
-//     }
-// }
-
 
 // 어바웃 팝업창
 function Pop(){
@@ -182,3 +168,21 @@ gsap.to("#imo", {
     alignOrigin: [0.5, 0.5]
   }
 });
+
+
+// const slideBG = document.getElementById('slide-wrap')
+// const slideEl = document.querySelectorAll('.swiper-slide')
+// const slideidx = slideEl.getAttribute('data-swiper-slide-index')
+// const slideEla = slideEl.classList.contains('swiper-slide-active')
+// console.log(slideidx)
+
+
+// if((slideidx == 0)){
+//     slideBG.classList.add('BG1')
+// }else if(slideidx == 1){
+//     slideBG.classList.add('BG2')
+// }else if(slideidx == 2){
+//     slideBG.classList.add('BG3')
+// }else{
+//     slideBG.classList.add('BG4')
+// }

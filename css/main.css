@@ -832,6 +832,7 @@ a.close .line2 {
 }
 .swiper-pagination {
     display: none;
+    
 }
 .swiper-pagination-bullet-active {
     background-color: red;
@@ -1257,6 +1258,16 @@ footer .end span {
     #slide-wrap .swiper-button-next, #slide-wrap .swiper-button-prev {
         display: none;
     }
+    .textHolder {
+        margin-top: 15% !important;
+    }
+    .textHolder img {
+        width: 100%;
+    }
+    #others{
+        padding: 7.51% 6.765%;
+    }
+}
 @media screen and (max-width: 1100px) {
     html {
         font-size: 12.5px;
@@ -1318,7 +1329,8 @@ footer .end span {
         padding: 0;
     }
 }
-@media screen and (max-width: 767px) {
+
+@media screen and (max-width: 767px) {  
     header {
         padding: 0 3%;
     }    
@@ -1328,26 +1340,26 @@ footer .end span {
     #visual .title {
         height: 70vh;
     }
-    }
     #visual {
         height: 70vh;
+    }
+    .textHolder {
+        margin-top: 25% !important;
     }
     .title-wrap {
         width: 100vw;
         height: 70vh;
     }
-    .textHolder {
-        margin-top: 50% !important;
-    }
-    .textHolder img {
-        width: 100%;
-    }
-
     .winbox.focus {
         width: 100% !important;
         left: 0 !important;
     }
-    
+    .folder h3 {
+        font-size: 9vw;
+    }
+    #mywork h3 {
+        font-size: 9vw;
+    }
     #slide-wrap {
         padding: 13% 0;
     }
@@ -1438,16 +1450,34 @@ footer .end span {
     }
 
     #others {
-        padding: 13% 5%;
+        padding: 0 10%;
+    }
+    #others .other-box {
+        height: 100%;
+        width: 100%;
+    }
+    #others .mix-btn {
+        padding: 5px;
+        justify-content: space-between;
     }
     #others .mix-wrapper {
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(4, 1fr);
-        /* height: 10%; */
-        padding: 10%;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+    #others .mix-btn button {
+        width: 5rem;
+        margin: 2px;
+    }
+    #others .mix-btn .btn-top {
+        width: fit-content;
+    }
+    #others .container .btn-bottom {
+        width: fit-content;
     }
     #others .mix-wrapper .mix {
+        padding: 5px;
     }
+    
     #contact {
         flex-direction: column;
     }
@@ -1474,4 +1504,16 @@ footer .end span {
     footer .end {
         font-size: 2.7vw;
     }
+}
+
+@media screen and (max-width: 500px) {
+    .textHolder {
+    margin-top: 40% !important;
+}   
+#contact .contact-form form ul li:nth-child(1) {
+    width: 100%;
+}
+#contact .contact-form form ul li:nth-child(2) {
+    width: 100%;
+}
 }
