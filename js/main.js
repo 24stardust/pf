@@ -123,6 +123,7 @@ function Pop(){
     
         mount: node,
     });
+    winbox.maximize(false);
     winbox.removeControl("wb-max");
     winbox.addControl({
         index: 0,
@@ -138,6 +139,8 @@ function Pop(){
             }
         }
         })
+    let title = document.querySelector('.wb-title')
+
 }
 
 

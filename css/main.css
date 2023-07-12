@@ -221,6 +221,7 @@ header .inner {
     stroke-dashoffset: 0;
     animation: dash 2s ease infinite;
     stroke: rgba(255, 255, 255, 0.5);
+    margin: 5%;
 }
 .star .starline .line2 {
     stroke-dasharray: 374; 
@@ -228,18 +229,15 @@ header .inner {
     animation: dash 2.5s infinite;
     stroke: rgba(255, 255, 255, 0.5);
 }
-.star .starline .blink svg:first-child {
-    margin-top: 20%;
-}
-.star .starline .blink svg:last-child {
-    margin-left: 30%;
-}
 .star .starline .blink {
     width: 100%;
     height: 100%;
     position: absolute;
     top: 0; left: 0;
-    padding: 10% 20% 10% 30%;
+    padding: 10% 20% 10% 25%;
+}
+.star .starline .blink svg:last-child {
+    margin: 5% 0 18% 40%;
 }
 
 @keyframes dash {
@@ -1241,6 +1239,9 @@ footer .end span {
     .swiper-slide .mw .text .link a {
         font-size: 1.2vw;
     }
+    #detail-page {
+        padding: 12% 10%;
+    }
 }
 @media screen and (max-width: 1395px) {
     html {
@@ -1267,6 +1268,7 @@ footer .end span {
     #others{
         padding: 7.51% 6.765%;
     }
+
 }
 @media screen and (max-width: 1100px) {
     html {
@@ -1277,6 +1279,12 @@ footer .end span {
     }
     #clone {
         padding: 15% 6%;
+    }
+    #detail-page {
+        padding: 20% 6%;
+    }
+    #detail-page ul {
+        gap: 5%;
     }
 }
 @media screen and (max-width: 900px) {
